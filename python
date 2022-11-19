@@ -1,0 +1,3 @@
+#/bin/bash
+source ./environments/executable-venv/bin/activate
+python $1

@@ -1,0 +1,3 @@
+git+https://github.com/Potatoasad/ringdown
+git+https://github.com/Potatoasad/ringdb@GWTC-2.1-update#egg=ringdb
+qnm
