@@ -43,3 +43,4 @@ install: python-bash-script
 clean:
 	rm -rf ./${ENV_FOLDER}/*
 	rm -f ./${NOTEBOOK_SCRIPT}
+	rm -f ./${EXECUTABLE_SCRIPT}
