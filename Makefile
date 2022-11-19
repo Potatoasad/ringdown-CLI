@@ -26,7 +26,7 @@ ${ENV_FOLDER}/executable-venv:
 	[[ -d ${ENV_FOLDER} ]] || mkdir ${ENV_FOLDER}
 	#venv_folder = ${ENV_FOLDER}/notebook-venv
 	#echo venv_folder
-	python -m venv ${ENV_FOLDER}/executable-venv
+	python3 -m venv ${ENV_FOLDER}/executable-venv
 	source ${ENV_FOLDER}/executable-venv/bin/activate; pip install --upgrade pip; pip install --upgrade setuptools; pip install -r requirements-executable.txt
 	source ${ENV_FOLDER}/executable-venv/bin/activate; pip install -e ${ROOT_FOLDER}
 
