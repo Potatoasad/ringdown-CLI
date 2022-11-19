@@ -10,7 +10,7 @@ ${ENV_FOLDER}/notebook-venv:
 	[[ -d ${ENV_FOLDER} ]] || mkdir ${ENV_FOLDER}
 	#venv_folder = ${ENV_FOLDER}/notebook-venv
 	#echo venv_folder
-	python -m venv ${ENV_FOLDER}/notebook-venv
+	python3 -m venv ${ENV_FOLDER}/notebook-venv
 	source ${ENV_FOLDER}/notebook-venv/bin/activate; pip install --upgrade pip; pip install --upgrade setuptools; pip install -r requirements.txt
 	source ${ENV_FOLDER}/notebook-venv/bin/activate; pip install -e ${ROOT_FOLDER}
 
