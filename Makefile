@@ -35,7 +35,7 @@ python-bash-script: ${ENV_FOLDER}/executable-venv
 	touch ./${EXECUTABLE_SCRIPT}
 	echo "#${SHELL}" >> ./${EXECUTABLE_SCRIPT}
 	echo "source ${ENV_FOLDER}/executable-venv/bin/activate" >> ./${EXECUTABLE_SCRIPT}
-	echo 'python $$1' >> ./${EXECUTABLE_SCRIPT}
+	echo 'python3 $$1' >> ./${EXECUTABLE_SCRIPT}
 	chmod +x ./${EXECUTABLE_SCRIPT}
 
 install: python-bash-script
